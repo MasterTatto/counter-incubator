@@ -3,7 +3,7 @@ import React from 'react';
 type propsType = {
 	counter: number;
 	counterPlus: () => void;
-	resetCounter:() => void
+	resetCounter: () => void;
 };
 function Window(props: propsType) {
 	return (
@@ -13,7 +13,6 @@ function Window(props: propsType) {
 					{props.counter}
 				</div>
 				<div className='b'>
-
 					<button
 						onClick={() => {
 							if (props.counter === 5) {
@@ -26,18 +25,19 @@ function Window(props: propsType) {
 						inc
 					</button>
 
+					<button
+						onClick={() => {
+							if (props.counter === 0) {
+								return;
+							}
+							props.resetCounter();
+						}}
+						className={`${'btn'} ${props.counter === 0 ? 'btnStop' : ''}`}
+					>
+						reset
+					</button>
 
-					<button onClick={() => {
-						if(props.counter === 0) {
-							return
-						}
-						props.resetCounter()
-						}} className={`${'btn'} ${props.counter === 0 ? 'btnStop' : ''}`}>
-							reset
-							</button>
-
-
-
+					<li>1</li>
 				</div>
 			</div>
 		</div>
