@@ -37,7 +37,7 @@ function Window(props: propsType) {
 						reset
 					</button>
 
-					<li>1</li>
+					
 				</div>
 			</div>
 		</div>
