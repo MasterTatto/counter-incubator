@@ -8,11 +8,15 @@ function App() {
 		setCounter(++counter);
 	}
 	function resetCounter() {
-		setCounter(0)
+		setCounter(0);
 	}
 	return (
 		<div className='App'>
-			<Window counter={counter} counterPlus={counterPlus} resetCounter={resetCounter}/>
+			<Window
+				counter={counter}
+				counterPlus={counterPlus}
+				resetCounter={resetCounter}
+			/>
 		</div>
 	);
 }
