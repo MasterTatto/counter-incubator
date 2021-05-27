@@ -9,7 +9,7 @@ function App() {
 	}
 	function resetCounter() {
 		setCounter(0);
-		//messTEST
+		
 	}
 	return (
 		<div className='App'>
