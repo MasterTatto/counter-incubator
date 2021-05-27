@@ -9,6 +9,7 @@ function App() {
 	}
 	function resetCounter() {
 		setCounter(0);
+		// hello
 	}
 	return (
 		<div className='App'>
