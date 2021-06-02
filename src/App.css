@@ -5,8 +5,9 @@
 }
 .App {
 	display: flex;
-	margin: 100px auto;
-	width: 600px;
+	/* align-items: center;
+	justify-content: center;
+	/* width: 1000px; */
 }
 
 body {
@@ -71,5 +72,42 @@ body {
 	opacity: 0.5;
 }
 .error {
+	color: red;
+}
+.windows {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 120px auto;
+	width: 100%;
+}
+.c_1 {
+	display: flex;
+	flex-direction: column;
+	border: 6px solid rgb(0, 194, 228);
+	padding: 40px;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: space-between;
+	align-content: center;
+}
+.label {
+	color: rgb(0, 194, 228);
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+.input {
+	border: 1px solid rgb(0, 194, 228);
+	outline: none;
+	padding: 5px;
+}
+.input_error {
+	border: 2px solid red;
+	background-color: rgba(209, 12, 12, 0.493);
+	outline: none;
+}
+.er_mes {
+	font-size: 30px;
 	color: red;
 }
