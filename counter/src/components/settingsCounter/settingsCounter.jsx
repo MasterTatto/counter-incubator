@@ -9,7 +9,7 @@ const SettingsCounter = (props) => {
             <div className={'wrapper'}>
                 <div>
                     <Input title={'Start value'} addValue={props.setStartValue} value={props.startValue}
-                           startValue={props.startValue} startValue={props.startValue}/>
+                           startValue={props.count}/>
                     <Input title={'Max value'} addValue={props.setMaxValue} value={props.maxValue}
                            maxValue={props.maxValue} startValue={props.startValue}/>
                 </div>

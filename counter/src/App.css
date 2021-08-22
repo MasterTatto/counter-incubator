@@ -62,6 +62,8 @@
     font-size: 160px;
     font-weight: 900;
     font-family: Roboto;
+    user-select: none;
+    white-space: nowrap;
 }
 
 .windowBox {
