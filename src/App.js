@@ -2,6 +2,8 @@ import './App.css';
 import SettingsCounter from "./components/settingsCounter/settingsCounter";
 import WindowCounter from "./components/windowCounter/windowCounter";
 import {useEffect, useState} from "react";
+import {useDispatch} from "react-redux";
+import {incCounterAC, setCounterAC} from "./redux/reducer";
 
 function App() {
     const [count, setCount] = useState(Number(null))
@@ -10,6 +12,8 @@ function App() {
     console.log('count : ' + count)
     console.log('Start : ' + startValue)
     console.log('Max : ' + maxValue)
+    //
+    const dispatch = useDispatch()
     //
     useEffect(() => {
         localStorage.setItem('keyNumber', startValue)
@@ -29,13 +33,13 @@ function App() {
 
 
     function setSettingsCounter() {
-        setCount(+startValue)
+        dispatch(setCounterAC(+startValue))
     }
 
     //
     function incCounter() {
-
-        setCount(+count + 1)
+        // dispatch(incCounterAC())
+         setCount(+count + 1)
     }
 
     //
